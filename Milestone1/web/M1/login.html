@@ -15,14 +15,17 @@ and open the template in the editor.
     <body>
         <h1>Login</h1>
         <p>Inserire username e password:
-        <!-- form per l'inserimento dello username e password -->
+        <!-- form per l'inserimento dello username e password all'interno di
+        una lista non ordinata -->
         <form action="login.html" method="post">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" value="">
+            <ul>
+                <li><label for="username">Username</label>
+                    <input type="text" name="username" id="username" value=""></li>
             <br>
-            <p> <label for="password">Password.</label>
+            <li><label for="password">Password.</label>
             <!-- il tipo password oscura i caratteri inseriti -->
-            <input type="password" name="password" id="password" value="">
+            <input type="password" name="password" id="password" value=""></li>
+            </ul>
         </form>
         <hr>
         <a href="descrizione.html">Descrizione</a><br>
