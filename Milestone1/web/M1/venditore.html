@@ -8,24 +8,37 @@ and open the template in the editor.
     <head>
         <title>Venditore</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="venditore,pezzi,prezzo,immagine,descrizione, milestone1,AMM">
+        <meta name="description" content="venditore.html della milestone n°1">
+        <meta name="author" content="Mattia Muscas">
     </head>
     <body>
+        <!-- id e name sono uguali, ma non devono esserlo per forza.
+        Il collegamento  tra label e e input avviene tramire for e id, devono
+        essere uguali. Il campo value è per inserire il valore iniziale -->
         <h1>Inserisci oggetto</h1>
         <form action="venditore.html" method="post">
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome"><br><br>
+            <input type="text" name="nome" id="nome" value=""><br><br>
             <label for="immagine">Immagine</label>
             <input type="text" name="immagine"><br><br>
             <label for="nPezzi">Pezzi</label>
-            <input type="number" name="nPezzi" id="nPezzi"><br><br>
+            <!-- type="number" permette di inserire solo valori numerici, e di
+            aumentarli e diminuirli tramite delle freccie nel lato destro della label-->
+            <input type="number" name="nPezzi" id="nPezzi" value=""><br><br>
             <label for="prezzo">Prezzo</label>
-            <input type="number" name="prezzo" id="prezzo"><br><br>
+            <input type="number" name="prezzo" id="prezzo" value=""><br><br>
             <label for="descrizione">Descrizione</label>
-            <textarea rows="2" cols="50" name="descrizione" id="descrizione"></textarea><br><br>
+            <!-- textarea specifica le righe (rows) e il numero di caratteri
+            per riga (cols). Può essere estesa cliccanco nell'angolo in basso
+            a destra e trascinandolo con il mouse-->
+            <textarea rows="2" cols="50" name="descrizione" id="descrizione" value=""></textarea><br><br>
+            <!-- bottono per la conferma delle informazioni inserite. Per ora
+            ricopre solo un ruolo "estetico" e non funzionale-->
             <button type="submit">Conferma</button>
             <hr/>
         </form>
+        <!-- link alle pagine descrizione.html e login.html -->
         <a href="descrizione.html">Descrizione</a><br>
         <a href="login.html">Login</a><br>
     </body>
