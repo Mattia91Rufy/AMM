@@ -6,11 +6,27 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Venditore</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Inserisci oggetto</h1>
+        <form action="venditore.html" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome"><br><br>
+            <label for="immagine">Immagine</label>
+            <input type="text" name="immagine"><br><br>
+            <label for="nPezzi">Pezzi</label>
+            <input type="number" name="nPezzi" id="nPezzi"><br><br>
+            <label for="prezzo">Prezzo</label>
+            <input type="number" name="prezzo" id="prezzo"><br><br>
+            <label for="descrizione">Descrizione</label>
+            <textarea rows="2" cols="50" name="descrizione" id="descrizione"></textarea><br><br>
+            <button type="submit">Conferma</button>
+            <hr/>
+        </form>
+        <a href="descrizione.html">Descrizione</a><br>
+        <a href="login.html">Login</a><br>
     </body>
 </html>
