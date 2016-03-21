@@ -17,19 +17,24 @@ and open the template in the editor.
         <p>Inserire username e password:
         <!-- form per l'inserimento dello username e password all'interno di
         una lista non ordinata -->
+        <!-- method=post perchè altrimenti i dati inseriti, compresa la 
+        password sarebbero visibili nell'indirizzo della pagina.
+        Cosa poco sicura -->
         <form action="login.html" method="post">
             <ul>
                 <li><label for="username">Username</label>
-                    <input type="text" name="username" id="username" value=""></li>
-            <br>
-            <li><label for="password">Password.</label>
+                <input type="text" name="username" id="username" value=""></li>
+                <li><label for="password">Password.</label>
             <!-- il tipo password oscura i caratteri inseriti -->
-            <input type="password" name="password" id="password" value=""></li>
+                <input type="password" name="password" id="password" value=""></li>
             </ul>
+            <input type="submit" value="Conferma"/>
         </form>
         <hr>
-        <a href="descrizione.html">Descrizione</a><br>
-        <a href="cliente.html">Cliente</a><br>
-        <a href="venditore.html">Venditore</a><br>
+        <ul>
+            <li><a href="descrizione.html">Descrizione</a></li>
+            <li><a href="cliente.html">Cliente</a></li>
+            <li><a href="venditore.html">Venditore</a></li>
+        </ul>
     </body>
 </html>

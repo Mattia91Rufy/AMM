@@ -19,33 +19,33 @@ and open the template in the editor.
         <h1>Inserisci oggetto</h1>
         <!-- inserisco le label all'interno di una lista non ordinata -->
         <ul>
-        <form action="venditore.html" method="post">
-            
-            <li><label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" value=""><br><br></li>
-            <li><label for="nPezzi">Pezzi</label>
-            <!-- type="number" permette di inserire solo valori numerici, e di
-            aumentarli e diminuirli tramite delle freccie nel lato destro della label-->
-                <input type="number" name="nPezzi" id="nPezzi" value=""><br><br></li>
-            <li><label for="prezzo">Prezzo</label>
-                <input type="number" name="prezzo" id="prezzo" value=""><br><br></li>
-            <li><label for="immagine">Immagine</label>
-                <input type="text" name="immagine"><br><br></li>
-            
-            
-            <li><label for="descrizione">Descrizione</label>
-            <!-- textarea specifica le righe (rows) e il numero di caratteri
-            per riga (cols). Può essere estesa cliccanco nell'angolo in basso
-            a destra e trascinandolo con il mouse-->
-                <textarea rows="2" cols="50" name="descrizione" id="descrizione" value=""></textarea><br><br></li>
-            <!-- bottono per la conferma delle informazioni inserite. Per ora
-            ricopre solo un ruolo "estetico" e non funzionale-->
-            <button type="submit">Conferma</button>
-            
-        </form>
-        </ul><hr/>
+            <form action="venditore.html" method="GET">
+
+                <li><label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" value=""></li>
+                <li><label for="nPezzi">Pezzi</label>
+                <!-- type="number" permette di inserire solo valori numerici, e di
+                aumentarli e diminuirli tramite delle freccie nel lato destro della label-->
+                <input type="number" name="nPezzi" id="nPezzi" value=""></li>
+                <li><label for="prezzo">Prezzo</label>
+                <input type="number" name="prezzo" id="prezzo" value=""></li>
+                <li><label for="immagine">Immagine</label>
+                <input type="text" name="immagine"></li>
+                <li><label for="descrizione">Descrizione</label>
+                <!-- textarea specifica le righe (rows) e il numero di caratteri
+                per riga (cols). Può essere estesa cliccanco nell'angolo in basso
+                a destra e trascinandolo con il mouse-->
+                <textarea rows="2" cols="50" name="descrizione" id="descrizione" value=""></textarea></li>
+                <!-- bottono per la conferma delle informazioni inserite. Per ora
+                ricopre solo un ruolo "estetico" e non funzionale-->
+                <div>
+                    <button type="submit">Conferma</button>
+                </div>
+            </form>
+        </ul>
+        <hr>
         <!-- link alle pagine descrizione.html e login.html -->
-        <a href="descrizione.html">Descrizione</a><br>
-        <a href="login.html">Login</a><br>
+        <a href="descrizione.html">Descrizione</a>
+        <a href="login.html">Login</a>
     </body>
 </html>
