@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="keyword" content="login,password, milestone1,AMM">
+        <meta name="description" content="login.html della milestone n°1">
+        <meta name="author" content="Mattia Muscas">
+        <link href="newcss.css" rel="stylesheet" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <p>Inserire username e password:
+        <!-- form per l'inserimento dello username e password all'interno di
+        una lista non ordinata -->
+        <!-- method=post perchè altrimenti i dati inseriti, compresa la 
+        password sarebbero visibili nell'indirizzo della pagina.
+        Cosa poco sicura -->
+        <form action="login.html" method="post">
+            <div id="sez_login">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" value="">
+                <label for="password">Password</label>
+            <!-- il tipo password oscura i caratteri inseriti -->
+                <input type="password" name="password" id="password" value="">
+            
+            <button type="submit">Conferma</button>
+            </div>
+        </form>
+        <hr>
+        <ul>
+            <li><a href="descrizione.html">Descrizione</a></li>
+            <li><a href="cliente.html">Cliente</a></li>
+            <li><a href="venditore.html">Venditore</a></li>
+        </ul>
+        
+    </body>
+</html>

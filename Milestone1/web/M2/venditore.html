@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Venditore</title>
+        <meta charset="UTF-8">
+        <meta name="keyword" content="venditore,pezzi,prezzo,immagine,descrizione, milestone1,AMM">
+        <meta name="description" content="venditore.html della milestone n°1">
+        <meta name="author" content="Mattia Muscas">
+        <link href="newcss.css" rel="stylesheet" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <!-- id e name sono uguali, ma non devono esserlo per forza.
+        Il collegamento  tra label e e input avviene tramire for e id, devono
+        essere uguali. Il campo value è per inserire il valore iniziale -->
+        <h1>Inserisci oggetto</h1>
+        <!-- inserisco le label all'interno di una lista non ordinata -->
+        
+            <form action="venditore.html" method="GET">
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" value="">
+                <label for="nPezzi">Pezzi</label>
+                <!-- type="number" permette di inserire solo valori numerici, e di
+                aumentarli e diminuirli tramite delle freccie nel lato destro della label-->
+                <input type="number" name="nPezzi" id="nPezzi" value="">
+                <label for="prezzo">Prezzo</label>
+                <input type="number" name="prezzo" id="prezzo" value="">
+                <label for="immagine">Immagine</label>
+                <input type="text" name="immagine">
+                <label for="descrizione">Descrizione</label>
+                <!-- textarea specifica le righe (rows) e il numero di caratteri
+                per riga (cols). Può essere estesa cliccanco nell'angolo in basso
+                a destra e trascinandolo con il mouse-->
+                <textarea rows="2" cols="50" name="descrizione" id="descrizione" value=""></textarea></li>
+                <!-- bottono per la conferma delle informazioni inserite. Per ora
+                ricopre solo un ruolo "estetico" e non funzionale-->
+                <div>
+                    <button type="submit">Conferma</button>
+                </div>
+            </form>
+        
+        <hr>
+        <!-- link alle pagine descrizione.html e login.html -->
+        <a href="descrizione.html">Descrizione</a>
+        <a href="login.html">Login</a>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2016, 17.02.44
+    Author     : mattia
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2016, 17.02.44
+    Author     : mattia
+*/
+body{ /*background-color:silver;*/
+    background-image: url(../M1/img/carbon.jpg); 
+    background-attachment: fixed;
+     
+}
+
+p{
+    font-family: "Serif", "Sans-serif","Times New Roman";
+    color: whitesmoke;
+}
+
+h1{color: #FF6600;}
+h2{color: #00CC00;}
+h3{color: #FFCC00;}
+
+a:link{color:blue;}
+a:visited{color:white;}
+a:active{
+    color:blue;
+    background-color: white;
+    font-weight: bold;
+}
+a:hover{
+    color:blue;
+    background-color: white;
+    font-weight: bold;
+    
+}
+label{color:whitesmoke;}
+input,textarea{
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+table,td,tr,th {
+    color: white;
+    text-align: center;
+    border-style: outset;
+    border-collapse: collapse;
+}
+.dispari{background-image: url(../M1/img/carbon2.jpg);}
+.pari{background-image: url(../M1/img/carbon3.jpg);}
+th{
+    background-image: url(../M1/img/gold4.jpg);
+    font-family: "monospace";
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+td{
+    font-family: "Sans-serif";
+    font-style: italic;
+}
+
+
+label,input,textarea {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea{
+    background-color: azure;
+    border-style:double;
+}
+#sez_login{
+    width: 200px;
+    height: 125px;
+    color: whitesmoke;
+    
+}
+
+ul{
+    color:white;
+}
