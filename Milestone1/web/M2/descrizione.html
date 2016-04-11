@@ -14,19 +14,34 @@ and open the template in the editor.
         <link href="newcss.css" rel="stylesheet" type="text/css" media="screen"/>
     </head>
     <body>
-        <a href="login.html">Login</a><hr>
+    <page>
+        <a id="login" href="login.html">Login</a> 
+        <br>
+    <sidebar>
         <!-- indice realizzato con un elenco non puntato, e con i link che
         riportano alle sezioni interne elencate -->
-        <ul><h3>Indice</h3>
-            <li><a href="#FME">Car Enterprise</a></li>
-            <li><a href="#catalogo">Catalogo auto C.E.</a></li>
-            <li><a href="#servizi">Servizi per i clienti</a></li>
-            <li><a href="#usato">Info sull'usato</a></li>
+        <ul class="sideBar"><h3 class="sideBar">Indice</h3>
+            <li><a class="sideBar" href="#FME">Car Enterprise</a></li>
+            <li><a class="sideBar" href="#catalogo">Catalogo auto C.E.</a></li>
+            <li><a class="sideBar" href="#servizi">Servizi per i clienti</a></li>
+            <li><a class="sideBar" href="#usato">Info sull'usato</a></li>
         </ul>
-        <hr> <!-- linea orrizzonzale -->
+    </sidebar>
+        <sidebar2>
+            <h3 class="sideBar2">Marche delle nostre auto</h3>
+            <img class="sideBar2" title="logo" alt="logo macchina" src="../M1/img/logo.png" width="50" height="50">
+            <img class="sideBar2" title="logo2" alt="logo macchina2" src="../M1/img/logo2.png" width="60" height="50">
+            <img class="sideBar2" title="logo3" alt="logo macchina3" src="../M1/img/logo3.png" width="50" height="50">
+            <img class="sideBar2" title="logo4" alt="logo macchina4" src="../M1/img/logo4.png" width="50" height="60">
+            <img class="sideBar2" title="logo5" alt="logo macchina5" src="../M1/img/logo5.png" width="50" height="60">
+        </sidebar2>
+    
+    <content>
         <!-- l'id dei titoli vengono usate per creare i link dell'indice -->
+        <header>
         <h1 id="FME">Car Enterprise (C.E.)</h1>
-        <p>Siamo nati nel 2010 da una semplice idea tra colleghi, e da allora siamo diventati leader nel settore nella vendita di macchine.
+        </header>
+        <p class="testo">Siamo nati nel 2010 da una semplice idea tra colleghi, e da allora siamo diventati leader nel settore nella vendita di macchine.
            Il nostro portale di vendita è usato in tutto il mondo. Offriamo assistenza 24h su 24 ai nostri clienti
            e cerchiamo di risolvere ogni tipo di problema legato ai nostri prodotti; inoltre tutte le domeniche diamo la possibilità a chi volesse acquistare
            una nostra vettura la possibilità di provarla gratuitamente per l'intera giornata.
@@ -34,7 +49,7 @@ and open the template in the editor.
            <i><br><br>Perchè grazie a noi, i sogni vincono la gravità.</i> <!-- Stile corsivo -->
         <hr>
         <h2 id="catalogo">Catalogo auto C.E.</h2>
-        <p>Il nostro catalogo comprende 5 tipi di macchina, elencate in seguito a seconda del loro utilizzo:</p>
+        <p class="testo">Il nostro catalogo comprende 5 tipi di macchina, elencate in seguito a seconda del loro utilizzo:</p>
         <ul>
             <li>Motocicletta Z.Ej</li>
             <li>Car famigliari</li>
@@ -45,17 +60,22 @@ and open the template in the editor.
         <a href="cliente.html">Vai al catalogo ...</a>
         <hr>
         <h2 id="servizi">Servizi per i clienti</h2>
-        <p></p>
         <h3 id="officina">Ricambi e riparazione:</h3>
-        <p>se la vostra auto a causa di un guasto vi lascia a piedi o presenta un qualsiasi tipo
+        <p class="testo">se la vostra auto a causa di un guasto vi lascia a piedi o presenta un qualsiasi tipo
             di malfunzionamento, tramite la nostra app potrete richiedere supporto immediato ai nostri tecnici. Una persona qualificata verrà
             da voi con una macchina di cortesia per voi, e prenderà in custodia la vostra vettura, la quale verrà portata subito in riparazione a nostre
             spese nelle nostre officine. A riparazione completata vi verrà riconsegnata la vostra auto. I tempi di riparazione vanno
             dai 2 giorni a 5 giorni (a seconda del guasto).
         <br>
         <h3 id="usato">Usato:</h3>
-        <p> Un altro servizio che offriamo ai nostri clienti comprende la possibilità di acquistare macchine usate, garantite al 100% dalla FCE.
+        <p class="testo"> Un altro servizio che offriamo ai nostri clienti comprende la possibilità di acquistare macchine usate, garantite al 100% dalla FCE.
             Possiamo gestire la vendita dei nostri mezzi usati. I clienti possono facilmente mettere in vendita le loro auto
             attraverso il nostro sito, dopo che i nostri meccanici avranno verificato le condizioni dell'auto.
-    </body>
+    </content>
+        <footer>
+            <hr class="hr">
+            <p class="testoFooter"> (C.E.) sempre con voi ...
+        </footer>
+    </page>
+            </body>
 </html>
