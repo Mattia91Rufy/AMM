@@ -1,0 +1,210 @@
+
+
+body{
+    background-image: url(../images/carbon.jpg); 
+    background-attachment: fixed; /*sfondo che non scorre con la pagina*/
+     
+}
+
+p, .forEach{
+    font-family: "Serif", "Sans-serif","Times New Roman";
+    color: whitesmoke;
+}
+
+h1{color: #FF6600;}
+h2{color: #00CC00;}
+h3{color: #FFCC00;}
+
+/* comportamento dei link al passaggio del mouse */
+a:link{color:blue;} /*colore dei link*/
+a:visited{color:white;} /*colore dei link visitati*/
+a:active{ /*comportamento dei link cliccati*/
+    color:blue;
+    background-color: white;
+    font-weight: bold;
+}
+
+a:hover{ /*comportamento dei link al passaggio del mouse*/
+    color:blue;
+    background-color: white;    
+}
+
+/* Caratteristiche del testo nelle label, input e textarea */
+label{color:whitesmoke;}
+input,textarea{
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+table,td,tr,th {
+    color: white;
+    text-align: center; /* posizione testo */
+    border-style: outset; /* stile bordi tabella */
+    border-collapse: collapse; /* unione delle linee delle colonne */
+}
+.dispari{background-image: url(../images/carbon2.jpg);} /* sfondo diverso per le righe con classe dispari */
+.pari{background-image: url(../images/carbon3.jpg);} /* sfondo diverso per le righe con classe pari */
+
+/* stili diversi per l'intestazione della tabella' */
+th{  
+    background-image: url(../images/gold4.jpg);
+    font-family: "monospace";
+    color: white;
+    font-weight: bold;
+     font-size: 16px;
+}
+
+td{ /* righe della tabella */
+    font-family: "Sans-serif";
+    font-style: italic;
+}
+
+/* caratteristiche estetiche delle label, input e textarea */
+label,input,textarea {
+    display: block;
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+/* colore e stile dei bordi nei campi di inserimento dati */
+input, textarea{
+    background-color: white;
+    border-style:double;
+}
+
+ul{ /* colore tabella a elenco non ordinato */
+    color:white;
+}
+input:focus, textarea:focus, select:focus{ 
+    background-color: yellow; /* sfondo dei campi di inserimento dati, diventa
+    giallo */
+}
+
+.ok{ /* posizionamento del tasto conferma, classe "ok" */
+    width: 100px;
+    height: 30px;
+    background-color:#00CC00;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+#login{
+    margin-left: 5px; /* link di login della pagina descrizione.html*/
+    font-weight: bold;
+}
+
+/* posizione dei componenti della pagina, e anche classi */
+.testo,h1,h2,h3,hr,ul,br,a,label,input,textarea,button,.ok, .forEach, select{
+    margin-left: 220px; /* distanza dal margine sinistro */
+    margin-right: 350px; /* distanza dal margine destro */
+}
+select{margin-bottom: 10px;}
+header{background-image:url(../images/carbon2.jpg);} /* sfondo dell'header */
+
+footer, .hr, .testoFooter{ /* posizione e dimensione del desto del footer */
+    margin-left: 0px;   
+    margin-right: 0px;
+    font-size: 12px;
+}
+
+.sideBar{ /* posizionamento della classe sidebar*/
+    margin-left: 1%;
+    margin-right: 10px;
+}
+.errore{
+    margin-left: 220px; /* distanza dal margine sinistro e destro*/
+    margin-right: 350px;
+    color: red;
+}
+sidebar{ /* colore, orientamento, stile bordo della sidebar */
+    color: #FFCC00;   
+    float: left;
+    margin-top: 85px;
+    border-style: solid;
+    background-color:black;
+}
+
+sidebar2{ /* colore, orientamento, stile bordo della sidebar2 */
+    color: blue;   
+    float: right;
+    margin-top: 85px;
+    border-style: solid;
+    background-color:black;
+}
+
+.sideBar2{ /* posizionamento della classe sidebar2 */
+    margin-left: 12%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+table{margin-left: 170px;} /* distanza margine sinistro della table (cliente.html) */
+
+.buttonCarr{ /* grandezza area dedicata albottone per aggiungere al carrello una nuova macchina */
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100px;
+    height: 100px;
+}
+.testoListino{ /* grandezza area dedicata alla descrizione */
+    width: 300px;
+    height: 51px;
+}
+/* Bloccare i footer delle pagine con pochi contenuti in fondo alla pagina.
+   Soluzione un pò grezza.
+*/
+.footerLogin{margin-top: 400px;}
+.footerVenditore{margin-top: 270px;}
+.footerCliente{margin-top: 10px;}
+
+/* Comportamento pagina al variare della dimensione. Layout a 2 colonna  */
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    sidebar2{display: none;}
+    #sideBarCliente{display: none;}/* eliminazione delle sidebar dalla pagina cliente.html */
+    
+    .testo,h1,h2,h3,hr,ul,a{margin-right: 0px;}
+    
+    footer{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 12px;
+    }
+    
+    
+    .sideBar{
+        margin-left: 1%;
+        margin-right: 10px;
+    }
+    
+    table{margin-left: 0px;}
+
+    sidebar{
+        color: #FFCC00;   
+        float: left;
+        margin-top: 85px;
+        border-style: solid;
+        background-color:black;
+    }
+}
+
+/* Comportamento pagina al variare della dimensione. Layout a 1 colonna  */
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    sidebar{display: none;}
+    sidebar2{display: none;}
+    .footerCliente{ margin-right: -200px; margin-left: 0px;}
+    .testo,h1,h2,h3,hr,ul,a,label,input,textarea,button,.ok, select{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .Cliente{margin-left: 10px;}
+    .listino{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    footer{margin-left: 0px;}
+    .footerCliente{margin-right: 0px;}
+    
+    
+}

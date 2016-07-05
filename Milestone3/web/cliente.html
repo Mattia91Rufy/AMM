@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cliente</title>
+        <meta charset="UTF-8">
+        <meta name="keyword" content="cliente,auto, milestone3,AMM">
+        <meta name="description" content="cliente.html della milestone n°3">
+        <meta name="author" content="Mattia Muscas">
+        <link href="CSS/newcss.css" rel="stylesheet" type="text/css" media="screen"/>
+    </head>
+    <body>
+    <page>
+        <sidebar id="sideBarCliente">
+            <ul class="sideBar">
+            <li><a class="sideBar" href="descrizione.html">Descrizione</a></li>
+            <li><a class="sideBar" href="login.html">Login</a></li>
+        </ul>
+        </sidebar>
+        
+        <header class="Cliente">
+            <h1 class="Cliente">Modelli, prezzi e disponibilità</h1>
+        </header>
+        <!-- tramite table realizzo una tabella con 5 righe (una per ogni oggetto)
+        e 6 colonne. Ogni colonna conterrà un'informazione aggiuntiva al prodotto
+        in vendita -->
+        <content>
+        <table class="listino">
+            <th>Auto</th>
+            <th>Immagine</th>
+            <th>Pezzi</th>
+            <th>Prezzo</th>
+            <th>Carrello</th>
+            <th>Descrizione</th>
+            <tr class="dispari">
+                <td>Famigliare</td>
+                <td><img title="famigliare" alt="Family_Car"
+src="images/famigliare.png" width="110" height="70"></td>
+                <td>37</td>
+                <td>28.000 €</td>
+                <td>
+                    <button class="buttonCarr" type="submit">
+                        <img src="images/carrello.png" width="50" height="50"/><strong>Aggiungi a carrello</strong></button>
+                </td>
+                <td><p class="testoListino">Macchina per uso famigliare. 5, + 2 posti aggiuntivi e un cofano capiente<p></p></td>
+            </tr>
+            <tr class="pari"><td>Sportiva</td>
+            <td><img title="sportiva" alt="Sporting_Car"
+src="images/sportiva.png" width="110" height="90"></td>
+            <td>24</td>
+            <td>57.500 €</td>
+            <td>
+                <button class="buttonCarr" type="submit">
+                        <img src="images/carrello.png" width="50" height="50"/><strong>Aggiungi a carrello</strong></button>
+            </td>
+            <td><p class="testoListino">Macchina sportiva da prestazioni elevate. Divertimento assicurato</p></td>
+            </tr>
+            <tr class="dispari"><td>Rally</td>
+                <td><img title="rally" alt="Rally_Car"
+                    src="images/rally.png" width="110" height="80"></td>
+                <td>17</td>
+                <td>35.000 €</td>
+                <td>
+                    <button class="buttonCarr" type="submit">
+                        <img src="images/carrello.png" width="50" height="50"/><strong>Aggiungi a carrello</strong></button>
+                </td>
+                <td><p class="testoListino">Terra, sabbia, fango e pietre, saranno come asfalto</p></td>
+            </tr>
+            <tr class="pari"><td>Galaxy</td>
+                <td><img title="galaxy" alt="Galaxy_Car"
+                src="images/galaxy.png" width="80" height="80"></td>
+                <td>6</td>
+                <td>476.500 €</td>
+                <td>
+                    <button class="buttonCarr" type="submit">
+                        <img src="images/carrello.png" width="50" height="50"/><strong>Aggiungi a carrello</strong></button>
+                </td>
+                <td><p class="testoListino">Ideata con la NASA per la tratta Terra - Luna</p></td>
+            </tr>
+            <tr class="dispari"><td>Motocicletta Z.Ej</td>
+                <td><img title="motorbike" alt="Motorbike"
+                src="images/motorbike.png" width="100" height="80"></td>
+                <td>14</td>
+                <td>17.350 €</td>
+                <td>
+                    <button class="buttonCarr" type="submit">
+                        <img src="images/carrello.png" width="50" height="50"/><strong>Aggiungi a carrello</strong></button>
+                </td>
+                <td><p class="testoListino">La potenza di una sportiva su due ruote, alte prestazioni e divertimento garantito</p></td>
+            </tr>
+        </table>
+        </content>
+        <footer class="footerCliente">
+            <hr class ="hr">
+            <p>(C.E.)Sempre con voi ...
+        </page>
+    </body>
+</html>
